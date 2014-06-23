@@ -1,0 +1,124 @@
+<% layout('base') -%>
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+  <div class="container">
+  </div>
+</div>
+
+<div class="mainContent">
+  <div class="container clearfix">
+    <div class="pageContainer clearfix col-xs-12 pl-0 pr-0">
+      <div class="col-xs-12">
+        <div class="topPortion clearfix">
+          <div class="pagePrompt text-center col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">Getting Started</div>
+          <div class="yourDetails text-center col-xs-12">
+            <input class="yourName input-lg" placeholder="Your Name"></input>
+            <input class="yourContactInfo input-lg" placeholder="Your Email"></input>
+            <button class="btn btn-lg">Good!</button>
+          </div> <!-- END yourDetails -->
+        </div> <!-- END topPortion -->
+      </div>
+
+      <div class="mapAndList col-xs-12 pl-0 pr-0">
+        <div class="proximityPicker">
+          <div class="btn-group btn-group-lg text-center col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-1">
+            <button type="button" class="btn btn-default">Near Me</button>
+            <button type="button" class="btn btn-default">Inbetween Us</button>
+            <button type="button" class="btn btn-default">Near Them</button>
+          </div>
+        </div>
+
+        <div class="occasionTypePicker col-xs-12">
+          <button type="button" class="occasion btn btn-lg firstDate col-xs-12 col-md-4">The <br />First Date </button>
+          <button type="button" class="occasion btn btn-lg businessMeeting col-xs-12 col-md-4">Getting Down <br />to Business</button>
+          <button type="button" class="occasion btn btn-lg grabCoffee col-xs-12 col-md-4">Let's Grab <br />Coffee Together</button>
+        </div>
+
+        <div id="map_canvas" class="col-xs-12 col-md-12 col-lg-6"></div>
+        
+        <div id="listViewer" class="col-xs-12 col-md-12 col-lg-6">
+        <div class="listViewerTitle"><img src="images/coffeeMug_icon.png"/>Pick 3 Places Near You</div>
+          
+          
+          <div class="listItem">
+            <div class="btn btn-lg AddButton"><i class="fa fa-check"></i></div>
+            <div class="shopImg"><img src="images/coffee-emporium.jpg"></div>
+            <div class="shopName">1. Coffee Emporium</div>
+            <div class="shopAddress1stLine">110 E Central Pkwy</div>
+            <div class="shopAddress2ndLine">Cincinnati, OH 45202</div>
+            <div class="shopPhoneNumber">(513) 651-5483</div>
+
+          </div> <!-- listItem -->
+
+          <div class="listItem">
+            <div class="btn btn-lg RemoveButton"><i class="fa fa-plus"></i></div>
+            <div class="shopImg"><img src="images/coffee-emporium.jpg"></div>
+            <div class="shopName">1. Coffee Emporium</div>
+            <div class="shopAddress1stLine">110 E Central Pkwy</div>
+            <div class="shopAddress2ndLine">Cincinnati, OH 45202</div>
+            <div class="shopPhoneNumber">(513) 651-5483</div>
+
+          </div> <!-- listItem -->
+
+          <div class="listItem">
+            <div class="btn btn-lg AddButton"><i class="fa fa-check"></i></div>
+            <div class="shopImg"><img src="images/coffee-emporium.jpg"></div>
+            <div class="shopName">1. Coffee Emporium</div>
+            <div class="shopAddress1stLine">110 E Central Pkwy</div>
+            <div class="shopAddress2ndLine">Cincinnati, OH 45202</div>
+            <div class="shopPhoneNumber">(513) 651-5483</div>
+
+          </div> <!-- listItem -->
+
+          <div class="listItem">
+            <div class="btn btn-lg AddButton"><i class="fa fa-check"></i></div>
+            <div class="shopImg"><img src="images/coffee-emporium.jpg"></div>
+            <div class="shopName">1. Coffee Emporium</div>
+            <div class="shopAddress1stLine">110 E Central Pkwy</div>
+            <div class="shopAddress2ndLine">Cincinnati, OH 45202</div>
+            <div class="shopPhoneNumber">(513) 651-5483</div>
+
+          </div> <!-- listItem -->
+
+          <div class="listItem">
+            <div class="btn btn-lg RemoveButton"><i class="fa fa-plus"></i></div>
+            <div class="shopImg"><img src="images/coffee-emporium.jpg"></div>
+            <div class="shopName">1. Coffee Emporium</div>
+            <div class="shopAddress1stLine">110 E Central Pkwy</div>
+            <div class="shopAddress2ndLine">Cincinnati, OH 45202</div>
+            <div class="shopPhoneNumber">(513) 651-5483</div>
+
+          </div> <!-- listItem -->
+
+          <div class="listItem">
+            <div class="btn btn-lg AddButton"><i class="fa fa-check"></i></div>
+            <div class="shopImg"><img src="images/coffee-emporium.jpg"></div>
+            <div class="shopName">1. Coffee Emporium</div>
+            <div class="shopAddress1stLine">110 E Central Pkwy</div>
+            <div class="shopAddress2ndLine">Cincinnati, OH 45202</div>
+            <div class="shopPhoneNumber">(513) 651-5483</div>
+
+          </div> <!-- listItem -->
+
+          <div class="loadMore text-center">
+            <p class="moreText"> More</p>
+            <div class="MoreArrow text-center"></div>
+
+          </div><!-- END loadMore -->
+
+
+        </div><!-- END listViewr -->
+      </div><!-- mapAndList -->
+
+      <div class="nextButtonSection text-center col-xs-12">
+        <a href="/picking_times"><button class="btn btn-lg next">Let's Pick Times <i class="fa fa-arrow-right"></i></button></a>
+      </div>
+
+      
+    </div>  <!-- end pickingTimes -->
+
+
+
+  </div>   <!-- end container -->
+</div>    <!-- end mainContent -->
+

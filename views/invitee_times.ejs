@@ -1,0 +1,269 @@
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+  <div class="container">
+  </div>
+</div>
+
+<div class="mainContent">
+  <div class="container clearfix">
+    <div class="pageContainer pickingTimes clearfix col-xs-12">
+      <div class="col-xs-12">
+        <div class="topPortion clearfix">
+          <div class="pagePrompt text-center col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">Time for Times</div>
+        </div> <!-- END topPortion -->
+      </div>
+
+      <div class="timesPickerContainer col-xs-12">
+
+
+        <!-- Split button SELECT TIME DURATION-->
+        <div class="btn-group">
+          <button type="button" class="btn btn-danger">15 Min</button>
+          <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+            <span class="caret"></span>
+            <span class="sr-only">Toggle Dropdown</span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">15 Mins.</a></li>
+            <li><a href="#">30 Mins.</a></li>
+            <li><a href="#">45 Mins.</a></li>
+            <li><a href="#">60 Mins.</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Other...</a></li>
+          </ul>
+        </div>
+
+        <a href="/picking_times"><button class="suggestAlternativeTime btn gray">Suggest Alternative Times <i class="fa fa-plus-square"></i></button></a>
+
+        <span class="instuction">Click to Cycle through Location</span>
+
+        <div class="panel panel-default" style="height: 565px; overflow: scroll;">
+          <!-- Default panel contents -->
+          <!--<div class="panel-heading">Panel heading</div>-->
+          <!-- Table -->
+          <table class="table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Today</th>
+                <th>Tomorrow</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="time">7 AM</td>
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 7-7:30 AM</td> <!-- Today -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 7-7:30 AM</td> <!-- Tomorrow -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 7-7:30 AM</td> <!-- Wednesday -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 7-7:30 AM</td> <!-- Thursday -->
+              </tr>
+              <tr>
+                <td class="time"></td>
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 7:30-8</td> <!-- Today -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 7:30-8</td> <!-- Tomorrow -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 7:30-8</td> <!-- Wednesday -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 7:30-8</td> <!-- Thursday -->
+              </tr>
+              <tr>
+                <td class="time">8 AM</td>
+                <td class="timeAvailable locked"><i class="fa fa-square-o"></i> Unavailable</td> <!-- Today -->
+                <td class="timeAvailable locked"><i class="fa fa-square-o"></i> Unavailable</td> <!-- Tomorrow -->
+                <td class="timeAvailable locked"><i class="fa fa-square-o"></i> Unavailable</td> <!-- Wednesday -->
+                <td class="timeAvailable locked"><i class="fa fa-square-o"></i> Unavailable</td> <!-- Thursday -->
+              </tr>
+              <tr>
+                <td class="time"></td>
+                <td class="timeAvailable locked"><i class="fa fa-square-o"></i> Unavailable</td> <!-- Today -->
+                <td class="timeAvailable locked"><i class="fa fa-square-o"></i> Unavailable</td> <!-- Tomorrow -->
+                <td class="timeAvailable locked"><i class="fa fa-square-o"></i> Unavailable</td> <!-- Wednesday -->
+                <td class="timeAvailable locked"><i class="fa fa-square-o"></i> Unavailable</td> <!-- Thursday -->
+              </tr>
+              <tr>
+                <td class="time">9 AM</td>
+                <td class="timeAvailable locked"><i class="fa fa-square-o"></i> Unavailable</td> <!-- Today -->
+                <td class="timeAvailable locked"><i class="fa fa-square-o"></i> Unavailable</td> <!-- Tomorrow -->
+                <td class="timeAvailable locked"><i class="fa fa-square-o"></i> Unavailable</td> <!-- Wednesday -->
+                <td class="timeAvailable locked"><i class="fa fa-square-o"></i> Unavailable</td> <!-- Thursday -->
+              </tr>
+              <tr>
+                <td class="time"></td>
+                <td class="timeAvailable locked"><i class="fa fa-square-o"></i> Unavailable</td> <!-- Today -->
+                <td class="timeAvailable locked"><i class="fa fa-square-o"></i> Unavailable</td> <!-- Tomorrow -->
+                <td class="timeAvailable locked"><i class="fa fa-square-o"></i> Unavailable</td> <!-- Wednesday -->
+                <td class="timeAvailable locked"><i class="fa fa-square-o"></i> Unavailable</td> <!-- Thursday -->
+              </tr>
+              <tr>
+                <td class="time">10 AM</td>
+                <td class="timeAvailable locked"><i class="fa fa-square-o"></i> Unavailable</td> <!-- Today -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 10-10:30 am</td> <!-- Tomorrow -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 10-10:30 am</td> <!-- Wednesday -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 10-10:30 am</td> <!-- Thursday -->
+              </tr>
+              <tr>
+                <td class="time"></td>
+                <td class="timeAvailable locked"><i class="fa fa-square-o"></i> Unavailable</td> <!-- Today -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 10:30-11 am</td> <!-- Tomorrow -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 10:30-11 am</td> <!-- Wednesday -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 10:30-11 am</td> <!-- Thursday -->
+              </tr>
+              <tr>
+                <td class="time">11 AM</td>
+                <td class="timeAvailable locked"><i class="fa fa-square-o"></i> Unavailable</td> <!-- Today -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 11-11:30 am <!-- Tomorrow -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 11-11:30 am <!-- Wednesday -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 11-11:30 am <!-- Thursday -->
+              </tr>
+              <tr>
+                <td class="time"></td>
+                <td class="timeAvailable locked"><i class="fa fa-square-o"></i> Unavailable</td> <!-- Today -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 11:30-12 pm <!-- Tomorrow -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 11:30-12 pm <!-- Wednesday -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 11:30-12 pm <!-- Thursday -->
+              </tr>
+              <tr>
+                <td class="time">12 PM</td>
+                <td class="timeAvailable locked"><i class="fa fa-square-o"></i> Unavailable</td> <!-- Today -->
+                <td class="timeAvailable locked"><i class="fa fa-square-o"></i> Unavailable</td> <!-- Tomorrow -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 12-12:30 pm</td> <!-- Wednesday -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 12-12:30 pm</td> <!-- Thursday -->
+              </tr>
+              <tr>
+                <td class="time"></td>
+                <td class="timeAvailable locked"><i class="fa fa-square-o"></i> Unavailable</td> <!-- Today -->
+                <td class="timeAvailable locked"><i class="fa fa-square-o"></i> Unavailable</td> <!-- Tomorrow -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 12:30-1 pm <!-- Wednesday -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 12:30-1 pm <!-- Thursday -->
+              </tr>
+              <tr>
+                <td class="time">1 PM</td>
+                <td class="timeAvailable locked"><i class="fa fa-square-o"></i> Unavailable</td> <!-- Today -->
+                <td class="timeAvailable locked"><i class="fa fa-square-o"></i> Unavailable</td> <!-- Tomorrow -->
+                <td class="timeAvailable locked"><i class="fa fa-square-o"></i> Unavailable</td> <!-- Wednesday -->
+                <td class="timeAvailable locked"><i class="fa fa-square-o"></i> Unavailable</td> <!-- Thursday -->
+              </tr>
+              <tr>
+                <td class="time"></td>
+                <td class="timeAvailable locked"><i class="fa fa-square-o"></i> Unavailable</td> <!-- Today -->
+                <td class="timeAvailable locked"><i class="fa fa-square-o"></i> Unavailable</td> <!-- Tomorrow -->
+                <td class="timeAvailable locked"><i class="fa fa-square-o"></i> Unavailable</td> <!-- Wednesday -->
+                <td class="timeAvailable locked"><i class="fa fa-square-o"></i> Unavailable</td> <!-- Thursday -->
+              </tr>
+              <tr>
+                <td class="time">2 PM</td>
+                <td class="timeAvailable locked"><i class="fa fa-square-o"></i> Unavailable</td> <!-- Today -->
+                <td class="timeAvailable locked"><i class="fa fa-square-o"></i> Unavailable</td> <!-- Tomorrow -->
+                <td class="timeAvailable locked"><i class="fa fa-square-o"></i> Unavailable</td> <!-- Wednesday -->
+                <td class="timeAvailable locked"><i class="fa fa-square-o"></i> Unavailable</td> <!-- Thursday -->
+              </tr>
+              <tr>
+                <td class="time"></td>
+                <td class="timeAvailable locked"><i class="fa fa-square-o"></i> Unavailable</td> <!-- Today -->
+                <td class="timeAvailable locked"><i class="fa fa-square-o"></i> Unavailable</td> <!-- Tomorrow -->
+                <td class="timeAvailable locked"><i class="fa fa-square-o"></i> Unavailable</td> <!-- Wednesday -->
+                <td class="timeAvailable locked"><i class="fa fa-square-o"></i> Unavailable</td> <!-- Thursday -->
+              </tr>
+              <tr>
+                <td class="time">3 PM</td>
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 3-3:30 pm</td> <!-- Today -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 3-3:30 pm</td> <!-- Tomorrow -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 3-3:30 pm</td> <!-- Wednesday -->
+                <td class="timeAvailable locked"><i class="fa fa-square-o"></i> Unavailable</td> <!-- Thursday -->
+              </tr>
+              <tr>
+                <td class="time"></td>
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 3:30-4 am</td> <!-- Today -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 3:30-4 am</td> <!-- Tomorrow -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 3:30-4 am</td> <!-- Wednesday -->
+                <td class="timeAvailable locked"><i class="fa fa-square-o"></i> Unavailable</td> <!-- Thursday -->
+              </tr>
+              <tr>
+                <td class="time">4 PM</td>
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 4-4:30 pm</td> <!-- Today -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 4-4:30 pm</td> <!-- Tomorrow -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 4-4:30 pm</td> <!-- Wednesday -->
+                <td class="timeAvailable locked"><i class="fa fa-square-o"></i> Unavailable</td> <!-- Thursday -->
+              </tr>
+              <tr>
+                <td class="time"></td>
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 4:30-5 pm</td> <!-- Today -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 4:30-5 pm</td> <!-- Tomorrow -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 4:30-5 pm</td> <!-- Wednesday -->
+                <td class="timeAvailable locked"><i class="fa fa-square-o"></i> Unavailable</td> <!-- Thursday -->
+              </tr>
+              <tr>
+                <td class="time">5 PM</td>
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 5-5:30 pm</td> <!-- Today -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 5-5:30 pm</td> <!-- Tomorrow -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 5-5:30 pm</td> <!-- Wednesday -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 5-5:30 pm</td> <!-- Thursday -->
+              </tr>
+              <tr>
+                <td class="time"></td>
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 5:30-6 pm</td> <!-- Today -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 5:30-6 pm</td> <!-- Tomorrow -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 5:30-6 pm</td> <!-- Wednesday -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 5:30-6 pm</td> <!-- Thursday -->
+              </tr>
+              <tr>
+                <td class="time">6 PM</td>
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 6-6:30 pm</td> <!-- Today -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 6-6:30 pm</td> <!-- Tomorrow -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 6-6:30 pm</td> <!-- Wednesday -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 6-6:30 pm</td> <!-- Thursday -->
+              </tr>
+              <tr>
+                <td class="time"></td>
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 6:30-7 pm</td> <!-- Today -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 6:30-7 pm</td> <!-- Tomorrow -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 6:30-7 pm</td> <!-- Wednesday -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 6:30-7 pm</td> <!-- Thursday -->
+              </tr>
+              <tr>
+                <td class="time">7 PM</td>
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 7-7:30 pm</td> <!-- Today -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 7-7:30 pm</td> <!-- Tomorrow -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 7-7:30 pm</td> <!-- Wednesday -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 7-7:30 pm</td> <!-- Thursday -->
+              </tr>
+              <tr>
+                <td class="time"></td>
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 7:30-8 pm</td> <!-- Today -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 7:30-8 pm</td> <!-- Tomorrow -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 7:30-8 pm</td> <!-- Wednesday -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 7:30-8 pm</td> <!-- Thursday -->
+              </tr>
+              <tr>
+                <td class="time">8 PM</td>
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 8-8:30 pm</td> <!-- Today -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 8-8:30 pm</td> <!-- Tomorrow -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 8-8:30 pm</td> <!-- Wednesday -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 8-8:30 pm</td> <!-- Thursday -->
+              </tr>
+              <tr>
+                <td class="time"></td>
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 8:30-9 pm</td> <!-- Today -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 8:30-9 pm</td> <!-- Tomorrow -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 8:30-9 pm</td> <!-- Wednesday -->
+                <td class="timeAvailable available"><i class="fa fa-square-o"></i> 8:30-9 pm</td> <!-- Thursday -->
+              </tr>
+
+            </tbody>
+          </table>
+
+        </div>
+      </div> <!-- END timesPickerContainer -->
+
+      <div class="nextButtonSection text-center col-xs-12">
+        <a href="/invitee_locations_suggestion"><button class="btn btn-lg next">Pick the Spot <i class="fa fa-arrow-right"></i></button></a>
+      </div>
+
+
+      
+    </div>  <!-- end pickingTimes -->
+
+
+
+  </div>   <!-- end container -->
+</div>    <!-- end mainContent -->
