@@ -15,8 +15,8 @@ $icon-font-path: "../vendor/assets/fonts/bootstrap/";
 body {
     padding-top: 0px;
     padding-bottom: 20px;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #f3edd9;
+    font-family: 'Open', sans-serif;
+    background-color: #197cbc;
     color: #4a412f;
 }
 
@@ -33,6 +33,9 @@ body {
 .footer {
     padding-left: 15px;
     padding-right: 15px;
+    p {
+        color: white;
+    }
 }
 
 /* Custom page header */
@@ -281,10 +284,10 @@ body {
 
 .invitee_Welcome {
     .GrabACoffeeWithMe_Artwork {
-        background-image: url("../images/grab-a-coffee-with-me_artwork.png");
+        background-image: url("../images/peerio_logo.png");
         background-repeat: no-repeat;
         background-position: center center;
-        height:450px;
+        height: 450px;
         width: 450px;
         margin: 20px auto 20px auto;
     }
