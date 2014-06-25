@@ -5282,6 +5282,9 @@ footer {
   .hero .lead {
     margin-top: 20px; }
 
+.peeriointro {
+  color: white; }
+
 .jumbotron {
   background-color: red;
   background-image: url("../images/1215VineStreet.jpg");
@@ -5319,7 +5322,6 @@ footer {
     margin-bottom: 60px;
     margin-top: 40px; }
     .pageContainer .topPortion .pagePrompt {
-      margin-top: 55px;
       margin-bottom: 20px;
       color: #287bc1;
       font-size: 48px;
@@ -5591,6 +5593,14 @@ footer {
 .confirmationMessage {
   padding-top: 60px;
   font-family: sans-serif; }
+  .confirmationMessage .mailsent {
+    background-image: url("../images/sendEmail_graphic.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 260px;
+    width: 260px;
+    margin-left: auto;
+    margin-right: auto; }
   .confirmationMessage .note {
     margin: 10px 0px 10px 0px; }
   .confirmationMessage .input-group .copyURL {
@@ -5700,3 +5710,7 @@ footer {
 /* HELPERS */
 .center {
   margin: 0 auto !important; }
+
+.c1.c2 {
+  font-size: 20px;
+  font-weight: bold; }

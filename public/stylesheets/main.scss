@@ -108,6 +108,9 @@ footer {
         margin-top: 20px;
     }
 }
+.peeriointro {
+    color: white;
+}
 
 .jumbotron {
 
@@ -159,7 +162,6 @@ footer {
         margin-bottom: 60px;
         margin-top: 40px;
         .pagePrompt {
-            margin-top: 55px;
             margin-bottom: 20px;
             color: #287bc1;
             font-size: 48px;
@@ -531,6 +533,15 @@ footer {
 .confirmationMessage {
     padding-top: 60px;
     font-family: sans-serif;
+    .mailsent {
+        background-image: url("../images/sendEmail_graphic.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 260px;
+        width: 260px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .note {
         margin: 10px 0px 10px 0px;
     }
@@ -678,4 +689,8 @@ footer {
 /* HELPERS */
 .center {
     margin: 0 auto!important;
+}
+.c1.c2 {
+    font-size: 20px;
+    font-weight: bold;
 }
