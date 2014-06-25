@@ -15,7 +15,7 @@ $icon-font-path: "../vendor/assets/fonts/bootstrap/";
 body {
     padding-top: 0px;
     padding-bottom: 20px;
-    font-family: 'Open', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-color: #197cbc;
     color: #4a412f;
 }
@@ -285,12 +285,12 @@ footer {
         }
         
         .timeAvailable {
-            color: #4c4c4c;
+            color: #b9b9b9;
             cursor: pointer;
         }
         & .available {
             background-color: #f7f4e7;
-            color: #6f6e69;
+            color: black;
         }
         & .available:hover {
             background-color: #f4efdd;

@@ -5207,7 +5207,7 @@ button.close {
 body {
   padding-top: 0px;
   padding-bottom: 20px;
-  font-family: 'Open', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background-color: #197cbc;
   color: #4a412f; }
 
@@ -5408,7 +5408,7 @@ footer {
   .pickingTimes .timesPickerContainer .time {
     color: #b9b9b9; }
   .pickingTimes .timesPickerContainer .timeAvailable {
-    color: #4c4c4c;
+    color: #b9b9b9;
     cursor: pointer; }
   .pickingTimes .timesPickerContainer .available {
     background-color: #f7f4e7;
