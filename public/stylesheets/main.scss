@@ -287,6 +287,14 @@ footer {
         .timeAvailable {
             color: #b9b9b9;
             cursor: pointer;
+            &.selected {
+                background-color: #c1dced;
+                color: black;
+                .fa {
+                    color: white;
+                }
+            }
+
         }
         & .available {
             background-color: #f7f4e7;
@@ -301,12 +309,7 @@ footer {
                 color: #6666ff;
             }
         }
-        & .selected {
-            background-color: #c1dced;
-            .fa {
-                color: white;
-            }
-        }
+
         & .home{
             background-color: #bae3ba;
             .fa-check-square {

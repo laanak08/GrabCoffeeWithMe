@@ -5410,19 +5410,20 @@ footer {
   .pickingTimes .timesPickerContainer .timeAvailable {
     color: #b9b9b9;
     cursor: pointer; }
+    .pickingTimes .timesPickerContainer .timeAvailable.selected {
+      background-color: #c1dced;
+      color: black; }
+      .pickingTimes .timesPickerContainer .timeAvailable.selected .fa {
+        color: white; }
   .pickingTimes .timesPickerContainer .available {
     background-color: #f7f4e7;
-    color: #6f6e69; }
+    color: black; }
   .pickingTimes .timesPickerContainer .available:hover {
     background-color: #f4efdd; }
   .pickingTimes .timesPickerContainer .work {
     background-color: #d6d6ff; }
     .pickingTimes .timesPickerContainer .work .fa-check-square {
       color: #6666ff; }
-  .pickingTimes .timesPickerContainer .selected {
-    background-color: #c1dced; }
-    .pickingTimes .timesPickerContainer .selected .fa {
-      color: white; }
   .pickingTimes .timesPickerContainer .home {
     background-color: #bae3ba; }
     .pickingTimes .timesPickerContainer .home .fa-check-square {
