@@ -5601,7 +5601,8 @@ footer {
     height: 260px;
     width: 260px;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    margin-bottom: 40px; }
   .confirmationMessage .note {
     margin: 10px 0px 10px 0px; }
   .confirmationMessage .input-group .copyURL {
