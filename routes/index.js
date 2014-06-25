@@ -25,6 +25,9 @@ router.post('/signin', function(req, res) {
   res.render('homepage', { title: 'Express' });
 });
 
+router.post('/terms', function(req, res) {
+  res.render('terms_of_service', { title: 'Express' });
+});
 
 
 module.exports = router;

@@ -57,12 +57,58 @@ body {
     color: #777;
     border-top: 1px solid #e5e5e5;
 }
+footer {
+    background-image: url("../images/peerio_footer_logo.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    line-height: .5;
+    height: 40px;
+    .terms {
+        padding-left: 50px;
+        padding-top: 10px;
+        a {
+            color: white;
+        }
+        a:hover {
+            color: #7fb5e2; 
+        }
+    }
+    .copyright {
+        color: #7fb5e2;
+        padding-left: 50px;
+    }
+}
 
 .container-narrow > hr {
     margin: 30px 0;
 }
 
 /* Main marketing message and sign up button */
+.hero {
+    padding: 50px;
+    background-image: url("/images/peerio_hero_map.png");
+    background-position: center center;
+    .peeriologo {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    h2 {
+        font-size: 36px;
+        line-height: 1.3;
+    }
+    .maintext {
+        font-size: 36px;
+    }
+    .subtext {
+        font-size: 23px;
+    }
+    .lead {
+        margin-top: 20px;
+    }
+}
+
 .jumbotron {
 
     background-color: red;
@@ -110,27 +156,26 @@ body {
     -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
     .topPortion {
-        margin-bottom: 30px;
+        margin-bottom: 60px;
+        margin-top: 40px;
+        .pagePrompt {
+            margin-top: 55px;
+            margin-bottom: 20px;
+            color: #287bc1;
+            font-size: 48px;
+            font-weight: lighter;
+        }
         .subtitle {
             font-family: sans-serif;
             font-size: 16px;
             line-height: 1.2;
-            margin-top: 40px;
+            margin-top: 0px;
+            color: #999999;
         }
     }
 }
 
-.pagePrompt {
-    margin-top: 10px;
-    margin-bottom: 20px;
-    color: #4a412f;
-    font-size: 48px;
-    text-transform: uppercase;
-    letter-spacing: 6px;
-    border-top: 1px dashed #5f5f5f;
-    border-bottom: 1px dashed #5f5f5f;
-    font-weight: bold;
-}
+
 .user_profile {
     .userProfileDetails {
         .image {
@@ -184,7 +229,6 @@ body {
         margin: 30px auto 30px auto;
     }
     .timesPickerContainer {
-        text-transform: uppercase;
         background-color: #ededed;
         border: 1px solid #d4d4d4;
 
@@ -253,6 +297,12 @@ body {
             background-color: #d6d6ff;
             .fa-check-square {
                 color: #6666ff;
+            }
+        }
+        & .selected {
+            background-color: #c1dced;
+            .fa {
+                color: white;
             }
         }
         & .home{
@@ -591,6 +641,7 @@ body {
 }
 
 
+
 /* Supporting marketing content */
 .marketing {
     margin: 40px 0;
@@ -622,4 +673,9 @@ body {
     .jumbotron {
         border-bottom: 0;
     }
+}
+
+/* HELPERS */
+.center {
+    margin: 0 auto!important;
 }
