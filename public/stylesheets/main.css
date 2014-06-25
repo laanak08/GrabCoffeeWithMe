@@ -5266,7 +5266,6 @@ footer {
 .hero {
   padding: 50px;
   background-image: url("/images/peerio_hero_map.png");
-  height: 585px;
   background-position: center center; }
   .hero .peeriologo {
     margin-top: 30px;
