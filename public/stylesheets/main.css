@@ -5263,8 +5263,7 @@ footer {
 .hero {
   padding: 50px;
   background-image: url("/images/peerio_hero_map.png");
-  background-position: center center;
-  color: white; }
+  background-position: center center; }
   .hero .peeriologo {
     margin-top: 30px;
     margin-bottom: 20px;
@@ -5524,7 +5523,6 @@ footer {
     border: 1px solid #5F3711; }
 
 .mapAndList {
-  border-bottom: 1px solid #dddddd;
   margin-top: 10px;
   height: 570px; }
   .mapAndList #map_canvas {
@@ -5537,7 +5535,7 @@ footer {
     padding: 10px 10px 10px 0px; }
   .mapAndList .listViewerPadding {
     padding: 30px;
-    background-color: #cccccc;
+    background-color: #f2f2f2;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -5547,6 +5545,8 @@ footer {
     border-left: 1px solid #dddddd;
     height: 522px;
     overflow: scroll; }
+    .mapAndList #listViewer .listItem:hover {
+      background-color: red; }
     .mapAndList #listViewer .listItem {
       border-bottom: 1px solid #dddddd;
       padding: 20px 0px 20px 0px; }
