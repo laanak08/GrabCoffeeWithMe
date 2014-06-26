@@ -5266,7 +5266,8 @@ footer {
 .hero {
   padding: 50px;
   background-image: url("/images/peerio_hero_map.png");
-  background-position: center center; }
+  background-position: center center;
+  color: white; }
   .hero .peeriologo {
     margin-top: 30px;
     margin-bottom: 20px;
@@ -5591,10 +5592,10 @@ footer {
     color: #8c8989;
     background-color: #d9d9d9; }
 
-.confirmationMessage {
+.confirmation .confirmationMessage {
   padding-top: 60px;
   font-family: sans-serif; }
-  .confirmationMessage .mailsent {
+  .confirmation .confirmationMessage .mailsent {
     background-image: url("../images/sendEmail_graphic.png");
     background-repeat: no-repeat;
     background-position: center center;
@@ -5603,14 +5604,14 @@ footer {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px; }
-  .confirmationMessage .note {
+  .confirmation .confirmationMessage .note {
     margin: 10px 0px 10px 0px; }
-  .confirmationMessage .input-group .copyURL {
+  .confirmation .confirmationMessage .input-group .copyURL {
     background-color: #76b96e;
     color: white; }
-  .confirmationMessage .section {
+  .confirmation .confirmationMessage .section {
     margin-bottom: 60px; }
-  .confirmationMessage .sendModule {
+  .confirmation .confirmationMessage .sendModule {
     margin: 10px;
     border: 1px solid #e8e8e2;
     padding: 20px;
@@ -5622,34 +5623,54 @@ footer {
     background: -ms-linear-gradient(top, white 0%, #fafaf9 100%);
     background: linear-gradient(to bottom, white 0%, #fafaf9 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#fafaf9', GradientType=0 ); }
-    .confirmationMessage .sendModule .Title {
+    .confirmation .confirmationMessage .sendModule .Title {
       text-align: center;
       color: #666666;
       text-transform: uppercase;
       font-family: 'Montserrat', sans-serif;
       letter-spacing: 20;
       font-size: 19px; }
-    .confirmationMessage .sendModule .graphic {
+    .confirmation .confirmationMessage .sendModule .graphic {
       height: 200px;
       width: 200px;
       background-position: center center;
       background-repeat: no-repeat;
       margin: 10px auto 20px auto; }
-  .confirmationMessage .sendURL .graphic {
+  .confirmation .confirmationMessage .sendURL .graphic {
     background-image: url("../images/sendURL_graphic.png"); }
-  .confirmationMessage .or-text {
+  .confirmation .confirmationMessage .or-text {
     text-transform: uppercase;
     font-size: 40px;
     color: #4a412f;
     font-family: 'Montserrat', sans-serif; }
-  .confirmationMessage .sendEmail .graphic {
+  .confirmation .confirmationMessage .sendEmail .graphic {
     background-image: url("../images/sendEmail_graphic.png"); }
-  .confirmationMessage .sendEmail .btn {
+  .confirmation .confirmationMessage .sendEmail .btn {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     color: white; }
-    .confirmationMessage .sendEmail .btn.btn-gmail {
+    .confirmation .confirmationMessage .sendEmail .btn.btn-gmail {
       background-color: #e94c4c; }
+.confirmation .meetup_details {
+  margin-top: 80px;
+  margin-bottom: 50px; }
+
+.meetup_finalized .calenderset {
+  background-image: url("../images/meetup_setup_complete.png");
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 455px;
+  margin-left: auto;
+  margin-right: auto; }
+.meetup_finalized .meetup_location .meetup_time {
+  font-family: 'digital-7mono', sans-serif;
+  font-size: 80px; }
+.meetup_finalized .meetup_location .meetup_date {
+  font-family: 'digital-7mono', sans-serif;
+  font-size: 25px; }
+.meetup_finalized .meetup_location .meetup_name {
+  font-size: 29px;
+  color: #197cbc; }
 
 .invitee_location_suggestion #autoSuggestLocation {
   background-color: #76b96e;

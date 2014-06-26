@@ -25,6 +25,10 @@ router.get('/terms', function(req, res) {
   res.render('terms_of_service', { title: 'Express' });
 });
 
+router.get('/finalize', function(req, res) {
+  res.render('meetup_finalized', { title: 'Express' });
+});
+
 router.post('/signin', function(req, res) {
   res.render('homepage', { title: 'Express' });
 });

@@ -88,6 +88,7 @@ footer {
     padding: 50px;
     background-image: url("/images/peerio_hero_map.png");
     background-position: center center;
+    color: white;
     .peeriologo {
         margin-top: 30px;
         margin-bottom: 20px;
@@ -97,7 +98,7 @@ footer {
     h2 {
         font-size: 36px;
         line-height: 1.3;
-        color: white;
+        
     }
     .maintext {
         font-size: 36px;
@@ -533,86 +534,117 @@ footer {
         background-color: #d9d9d9;
     }
 }
-
-.confirmationMessage {
-    padding-top: 60px;
-    font-family: sans-serif;
-    .mailsent {
-        background-image: url("../images/sendEmail_graphic.png");
-        background-repeat: no-repeat;
-        background-position: center center;
-        height: 260px;
-        width: 260px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 40px;
-    }
-    .note {
-        margin: 10px 0px 10px 0px;
-    }
-    .input-group {
-        .copyURL {
-            background-color: #76b96e;
-            color: white;
-        }
-    }
-    .section {
-        margin-bottom: 60px;
-    }
-    .sendModule {
-        margin: 10px;
-        border: 1px solid #e8e8e2;
-        padding: 20px;
-        background: rgba(255,255,255,1);
-        background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(250,250,249,1) 100%);
-        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(250,250,249,1)));
-        background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(250,250,249,1) 100%);
-        background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(250,250,249,1) 100%);
-        background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(250,250,249,1) 100%);
-        background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(250,250,249,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#fafaf9', GradientType=0 );
-        .Title {
-            text-align: center;
-            color: #666666;
-            text-transform: uppercase;
-            font-family: 'Montserrat', sans-serif;
-            letter-spacing: 20;
-            font-size: 19px;
-        }
-        .graphic {
-            height: 200px;
-            width: 200px;
-            background-position: center center;
-            background-repeat: no-repeat;
-            margin: 10px auto 20px auto;
-        }
-    }
-    .sendURL {
-        .graphic {
-            background-image: url("../images/sendURL_graphic.png");
-        }
-    }
-    .or-text {
-        text-transform: uppercase;
-        font-size: 40px;
-        color: #4a412f;
-        font-family: 'Montserrat', sans-serif;
-    }
-    .sendEmail {
-        .graphic {
+.confirmation {
+    .confirmationMessage {
+        padding-top: 60px;
+        font-family: sans-serif;
+        .mailsent {
             background-image: url("../images/sendEmail_graphic.png");
+            background-repeat: no-repeat;
+            background-position: center center;
+            height: 260px;
+            width: 260px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 40px;
         }
-        .btn{
-            font-family: 'Montserrat', sans-serif;
-            text-transform: uppercase;
-            color: white;
-            &.btn-gmail {
-                background-color: #e94c4c;
+        .note {
+            margin: 10px 0px 10px 0px;
+        }
+        .input-group {
+            .copyURL {
+                background-color: #76b96e;
+                color: white;
             }
         }
+        .section {
+            margin-bottom: 60px;
+        }
+        .sendModule {
+            margin: 10px;
+            border: 1px solid #e8e8e2;
+            padding: 20px;
+            background: rgba(255,255,255,1);
+            background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(250,250,249,1) 100%);
+            background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(250,250,249,1)));
+            background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(250,250,249,1) 100%);
+            background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(250,250,249,1) 100%);
+            background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(250,250,249,1) 100%);
+            background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(250,250,249,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#fafaf9', GradientType=0 );
+            .Title {
+                text-align: center;
+                color: #666666;
+                text-transform: uppercase;
+                font-family: 'Montserrat', sans-serif;
+                letter-spacing: 20;
+                font-size: 19px;
+            }
+            .graphic {
+                height: 200px;
+                width: 200px;
+                background-position: center center;
+                background-repeat: no-repeat;
+                margin: 10px auto 20px auto;
+            }
+        }
+        .sendURL {
+            .graphic {
+                background-image: url("../images/sendURL_graphic.png");
+            }
+        }
+        .or-text {
+            text-transform: uppercase;
+            font-size: 40px;
+            color: #4a412f;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .sendEmail {
+            .graphic {
+                background-image: url("../images/sendEmail_graphic.png");
+            }
+            .btn{
+                font-family: 'Montserrat', sans-serif;
+                text-transform: uppercase;
+                color: white;
+                &.btn-gmail {
+                    background-color: #e94c4c;
+                }
+            }
+        }
+        
     }
-    
+    .meetup_details {
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
 }
+.meetup_finalized {
+    .calenderset {
+        background-image: url("../images/meetup_setup_complete.png");
+        background-repeat: no-repeat;
+        height: 300px;
+        width: 455px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .meetup_location {
+        .meetup_time {
+            font-family: 'digital-7mono', sans-serif;
+            font-size: 80px;
+        }
+        .meetup_date {
+            font-family: 'digital-7mono', sans-serif;
+            font-size: 25px;
+        }
+        .meetup_name {
+            font-size: 29px;
+            color: #197cbc;
+        }
+    }
+}
+
+
 .invitee_location_suggestion {
     #autoSuggestLocation {
         background-color: #76b96e;
