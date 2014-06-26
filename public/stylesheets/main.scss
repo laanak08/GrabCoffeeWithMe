@@ -110,6 +110,7 @@ footer {
         margin-top: 20px;
     }
 }
+
 .peeriointro {
     color: white;
 }
@@ -458,6 +459,14 @@ footer {
         border-bottom: 1px solid #dddddd;
         padding: 10px 10px 10px 0px;
     }
+    .listViewerPadding {
+        padding: 30px;
+        background-color: #cccccc;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        margin-bottom: 20px;
+    }
     #listViewer {
     background-color: #fbfbfb;
     border-left: 1px solid #dddddd;
@@ -473,14 +482,16 @@ footer {
                 padding-right: 20px;
             }
             .shopName {
+                color: #287bc1;
+                font-size: 18px;
                 font-weight: bold;
-                text-transform: uppercase;
             }
             .shopAddress1stLine,
             .shopAddress2ndLine,
             .shopPhoneNumber {
-                font-size: 16px;
+                font-size: 15px;
                 font-family: sans-serif;
+                color: #666666;
             }
             .AddButton,
             .RemoveButton {
@@ -646,6 +657,9 @@ footer {
             color: #197cbc;
             margin-top: 30px;
         }
+    }
+    .emailnotice {
+        margin-bottom: 20px;
     }
 }
 
