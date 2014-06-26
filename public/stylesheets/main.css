@@ -251,7 +251,6 @@ th {
   font-family: 'Glyphicons Halflings';
   src: url("../vendor/assets/fonts/bootstrap/glyphicons-halflings-regular.eot");
   src: url("../vendor/assets/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../vendor/assets/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../vendor/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../vendor/assets/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
-
 .glyphicon {
   position: relative;
   top: 1px;
@@ -876,7 +875,7 @@ th {
 
 html {
   font-size: 62.5%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  -webkit-tap-highlight-color: transparent; }
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -3986,7 +3985,6 @@ a.thumbnail.active {
 
   to {
     background-position: 0 0; } }
-
 .progress {
   overflow: hidden;
   height: 20px;
@@ -4944,7 +4942,7 @@ button.close {
     border-radius: 10px;
     cursor: pointer;
     background-color: #000 \9;
-    background-color: rgba(0, 0, 0, 0); }
+    background-color: transparent; }
   .carousel-indicators .active {
     margin: 0;
     width: 12px;
@@ -5030,7 +5028,6 @@ button.close {
 
 @-ms-viewport {
   width: device-width; }
-
 .visible-xs, .visible-sm, .visible-md, .visible-lg {
   display: none !important; }
 
@@ -5532,6 +5529,13 @@ footer {
     font-size: 18px;
     border-bottom: 1px solid #dddddd;
     padding: 10px 10px 10px 0px; }
+  .mapAndList .listViewerPadding {
+    padding: 30px;
+    background-color: #cccccc;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin-bottom: 20px; }
   .mapAndList #listViewer {
     background-color: #fbfbfb;
     border-left: 1px solid #dddddd;
@@ -5544,13 +5548,15 @@ footer {
         float: left;
         padding-right: 20px; }
       .mapAndList #listViewer .listItem .shopName {
-        font-weight: bold;
-        text-transform: uppercase; }
+        color: #287bc1;
+        font-size: 18px;
+        font-weight: bold; }
       .mapAndList #listViewer .listItem .shopAddress1stLine,
       .mapAndList #listViewer .listItem .shopAddress2ndLine,
       .mapAndList #listViewer .listItem .shopPhoneNumber {
-        font-size: 16px;
-        font-family: sans-serif; }
+        font-size: 15px;
+        font-family: sans-serif;
+        color: #666666; }
       .mapAndList #listViewer .listItem .AddButton,
       .mapAndList #listViewer .listItem .RemoveButton {
         float: right;
