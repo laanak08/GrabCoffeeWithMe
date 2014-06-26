@@ -66,4 +66,3 @@ $(function () {
         // false
     });
 });
->>>>>>> current
