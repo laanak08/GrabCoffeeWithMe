@@ -5370,7 +5370,7 @@ footer {
 .pickingTimes .timesPickerContainer {
   background-color: #ededed;
   border: 1px solid #d4d4d4;
-  padding: 15px 15px 0px 15px;
+  padding: 15px 15px 15px 15px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px; }
@@ -5438,6 +5438,12 @@ footer {
     color: #e6e6e6; }
     .pickingTimes .timesPickerContainer .locked .fa-square-o {
       color: #e6e6e6; }
+.pickingTimes .SuggestAlternativeTimes {
+  float: right; }
+  .pickingTimes .SuggestAlternativeTimes .btn {
+    color: white; }
+  .pickingTimes .SuggestAlternativeTimes .btn:hover {
+    background-color: blue; }
 
 .invitee_Welcome .GrabACoffeeWithMe_Artwork {
   background-image: url("../images/peerio_logo.png");
