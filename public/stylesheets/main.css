@@ -5677,6 +5677,8 @@ footer {
     font-size: 29px;
     color: #197cbc;
     margin-top: 30px; }
+.meetup_finalized .emailnotice {
+  margin-bottom: 20px; }
 
 .invitee_location_suggestion #autoSuggestLocation {
   background-color: #76b96e;
