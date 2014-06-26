@@ -29,6 +29,10 @@ router.post('/signin', function(req, res) {
   res.render('homepage', { title: 'Express' });
 });
 
+router.get('/marketplace', function(req, res) {
+  res.render('marketplace', { title: 'Express' });
+});
+
 
 
 
