@@ -1,36 +1,69 @@
-(function(){
-	if(/picktimes/.exec(window.location.href) ){
-		// calendarIncludes();
-	}
-}());
+$(function () {
+    console.log("ready");
+    //picking times page
+    $(".timeAvailable").click(function () {
+        // TODO change available and taken buttons
+        $(this).toggleClass("selected");
+        $(this).text("Available");
+        //$(this).children("i").toggleClass("fa-check-circle-o").toggleClass("fa-circle-o");
 
-function calendarIncludes(){
-	var jqUICss = document.createElement('link'),
-		jqCalCss = document.createElement('link');
-		
-	jqUICss.rel='stylesheet';
-	jqUICss.type='text/css';
-	jqUICss.href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/smoothness/jquery-ui.css';
-	
-	jqCalCss.rel='stylesheet';
-	jqCalCss.type='text/css';
-	jqCalCss.href='stylesheets/jquery.weekcalendar.css';
 
-	document.head.appendChild(jqUICss);
-	document.head.appendChild(jqCalCss);
+    });
 
-	var caljs = document.createElement('script'),
-		inlineCalScript = document.createElement('script'),
-		jq132 = document.createElement('script'),
-		jq172 = document.createElement('script');
+    //marketplace complete purchase page
+    $("#complete-purchase").click(function (e) {
+        e.preventDefault();
+        console.log("complete purchase clicked");
+        var buyeremail, selleremail, buyername, sellername, data = [];
+        // data.inviter = [];
+        // data.invitee = [];
+        data.inviteremail = $("#buyeremail").val();
+        data.inviteeemail = $("#selleremail").val();
+        data.inviterfirst = $("#buyername").val();
+        data.inviteefirst = $("#sellername").val();
+        PEERIO_API = "http://localhost:3001/";
+        // get meetup and occasion stuff, if necessary
+        // $.get( PEERIO_API + "meetup", function( data ) {
+        //   // $( ".result" ).html( data );
+        //   alert( JSON.stringify(data) );
+        // });
 
-	inlineCalScript.src='javascripts/inlineCalScript.js';
-	caljs.src='javascripts/jquery.weekcalendar.js';
-	jq132.src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js';
-	jq172.src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js';
+        console.log("data", data);
+        //send off stuff to create meetup
+        // $.post( PEERIO_API + "meetup", function( data ) {
+        //   // $( ".result" ).html( data );
+        //   alert( JSON.stringify(data) );
+        // });
+        return $.ajax({
+            url: PEERIO_API + "meetup",
+            // url: "/meetup", 
+            data: data,
+            // data: {"MyKey":"My Value"},
+            type: 'POST'
+                // contentType: 'application/json'
+        });
 
-	document.body.appendChild(inlineCalScript);
-	document.body.appendChild(caljs);
-	document.body.appendChild(jq132);
-	document.body.appendChild(jq172);
-}
+        // setTimeout(function(){
+        // 	$.ajax({
+        // 	    url: PEERIO_API + "meetup", 
+        // 	    // url: "/meetup", 
+        // 	    data: data,
+        // 	    // data: {"MyKey":"My Value"},
+        // 	    type: 'POST'
+        // 	    // contentType: 'application/json'
+        // 	});
+        // }
+        // , 15000);
+
+        //get buyer link
+
+
+        //send to confimation screen (with buyer link)
+
+
+        //prevent from submitting, submitting for some reason
+
+        // false
+    });
+});
+>>>>>>> current

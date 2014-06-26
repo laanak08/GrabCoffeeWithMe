@@ -5204,8 +5204,8 @@ button.close {
 body {
   padding-top: 0px;
   padding-bottom: 20px;
-  font-family: 'Montserrat', sans-serif;
-  background-color: #f3edd9;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #197cbc;
   color: #4a412f; }
 
 .navbar {
@@ -5218,6 +5218,10 @@ body {
 .footer {
   padding-left: 15px;
   padding-right: 15px; }
+  .header p,
+  .marketing p,
+  .footer p {
+    color: white; }
 
 /* Custom page header */
 .header {
@@ -5235,10 +5239,50 @@ body {
   color: #777;
   border-top: 1px solid #e5e5e5; }
 
+footer {
+  background-image: url("../images/peerio_footer_logo.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  line-height: .5;
+  height: 40px; }
+  footer .terms {
+    padding-left: 50px;
+    padding-top: 10px; }
+    footer .terms a {
+      color: white; }
+    footer .terms a:hover {
+      color: #7fb5e2; }
+  footer .copyright {
+    color: #7fb5e2;
+    padding-left: 50px; }
+
 .container-narrow > hr {
   margin: 30px 0; }
 
 /* Main marketing message and sign up button */
+.hero {
+  padding: 50px;
+  background-image: url("/images/peerio_hero_map.png");
+  background-position: center center;
+  color: white; }
+  .hero .peeriologo {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-top: 50px;
+    padding-bottom: 20px; }
+  .hero h2 {
+    font-size: 36px;
+    line-height: 1.3; }
+  .hero .maintext {
+    font-size: 36px; }
+  .hero .subtext {
+    font-size: 23px; }
+  .hero .lead {
+    margin-top: 20px; }
+
+.peeriointro {
+  color: white; }
+
 .jumbotron {
   background-color: red;
   background-image: url("../images/1215VineStreet.jpg");
@@ -5273,23 +5317,19 @@ body {
   -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75); }
   .pageContainer .topPortion {
-    margin-bottom: 30px; }
+    margin-bottom: 60px;
+    margin-top: 40px; }
+    .pageContainer .topPortion .pagePrompt {
+      margin-bottom: 20px;
+      color: #287bc1;
+      font-size: 48px;
+      font-weight: lighter; }
     .pageContainer .topPortion .subtitle {
       font-family: sans-serif;
       font-size: 16px;
       line-height: 1.2;
-      margin-top: 40px; }
-
-.pagePrompt {
-  margin-top: 10px;
-  margin-bottom: 20px;
-  color: #4a412f;
-  font-size: 48px;
-  text-transform: uppercase;
-  letter-spacing: 6px;
-  border-top: 1px dashed #5f5f5f;
-  border-bottom: 1px dashed #5f5f5f;
-  font-weight: bold; }
+      margin-top: 0px;
+      color: #999999; }
 
 .user_profile .userProfileDetails .image {
   height: 200px;
@@ -5328,10 +5368,9 @@ body {
 .pickingTimes .yourDetails {
   margin: 30px auto 30px auto; }
 .pickingTimes .timesPickerContainer {
-  text-transform: uppercase;
   background-color: #ededed;
   border: 1px solid #d4d4d4;
-  padding: 15px 15px 0px 15px;
+  padding: 15px 15px 15px 15px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px; }
@@ -5367,11 +5406,16 @@ body {
   .pickingTimes .timesPickerContainer .time {
     color: #b9b9b9; }
   .pickingTimes .timesPickerContainer .timeAvailable {
-    color: #4c4c4c;
+    color: #b9b9b9;
     cursor: pointer; }
+    .pickingTimes .timesPickerContainer .timeAvailable.selected {
+      background-color: #c1dced;
+      color: black; }
+      .pickingTimes .timesPickerContainer .timeAvailable.selected .fa {
+        color: white; }
   .pickingTimes .timesPickerContainer .available {
     background-color: #f7f4e7;
-    color: #6f6e69; }
+    color: black; }
   .pickingTimes .timesPickerContainer .available:hover {
     background-color: #f4efdd; }
   .pickingTimes .timesPickerContainer .work {
@@ -5394,9 +5438,15 @@ body {
     color: #e6e6e6; }
     .pickingTimes .timesPickerContainer .locked .fa-square-o {
       color: #e6e6e6; }
+.pickingTimes .SuggestAlternativeTimes {
+  float: right; }
+  .pickingTimes .SuggestAlternativeTimes .btn {
+    color: white; }
+  .pickingTimes .SuggestAlternativeTimes .btn:hover {
+    background-color: blue; }
 
 .invitee_Welcome .GrabACoffeeWithMe_Artwork {
-  background-image: url("../images/grab-a-coffee-with-me_artwork.png");
+  background-image: url("../images/peerio_logo.png");
   background-repeat: no-repeat;
   background-position: center center;
   height: 450px;
@@ -5485,6 +5535,13 @@ body {
     font-size: 18px;
     border-bottom: 1px solid #dddddd;
     padding: 10px 10px 10px 0px; }
+  .mapAndList .listViewerPadding {
+    padding: 30px;
+    background-color: #cccccc;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin-bottom: 20px; }
   .mapAndList #listViewer {
     background-color: #fbfbfb;
     border-left: 1px solid #dddddd;
@@ -5497,13 +5554,15 @@ body {
         float: left;
         padding-right: 20px; }
       .mapAndList #listViewer .listItem .shopName {
-        font-weight: bold;
-        text-transform: uppercase; }
+        color: #287bc1;
+        font-size: 18px;
+        font-weight: bold; }
       .mapAndList #listViewer .listItem .shopAddress1stLine,
       .mapAndList #listViewer .listItem .shopAddress2ndLine,
       .mapAndList #listViewer .listItem .shopPhoneNumber {
-        font-size: 16px;
-        font-family: sans-serif; }
+        font-size: 15px;
+        font-family: sans-serif;
+        color: #666666; }
       .mapAndList #listViewer .listItem .AddButton,
       .mapAndList #listViewer .listItem .RemoveButton {
         float: right;
@@ -5545,17 +5604,26 @@ body {
     color: #8c8989;
     background-color: #d9d9d9; }
 
-.confirmationMessage {
+.confirmation .confirmationMessage {
   padding-top: 60px;
   font-family: sans-serif; }
-  .confirmationMessage .note {
+  .confirmation .confirmationMessage .mailsent {
+    background-image: url("../images/sendEmail_graphic.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 260px;
+    width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px; }
+  .confirmation .confirmationMessage .note {
     margin: 10px 0px 10px 0px; }
-  .confirmationMessage .input-group .copyURL {
+  .confirmation .confirmationMessage .input-group .copyURL {
     background-color: #76b96e;
     color: white; }
-  .confirmationMessage .section {
+  .confirmation .confirmationMessage .section {
     margin-bottom: 60px; }
-  .confirmationMessage .sendModule {
+  .confirmation .confirmationMessage .sendModule {
     margin: 10px;
     border: 1px solid #e8e8e2;
     padding: 20px;
@@ -5567,34 +5635,62 @@ body {
     background: -ms-linear-gradient(top, white 0%, #fafaf9 100%);
     background: linear-gradient(to bottom, white 0%, #fafaf9 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#fafaf9', GradientType=0 ); }
-    .confirmationMessage .sendModule .Title {
+    .confirmation .confirmationMessage .sendModule .Title {
       text-align: center;
       color: #666666;
       text-transform: uppercase;
       font-family: 'Montserrat', sans-serif;
       letter-spacing: 20;
       font-size: 19px; }
-    .confirmationMessage .sendModule .graphic {
+    .confirmation .confirmationMessage .sendModule .graphic {
       height: 200px;
       width: 200px;
       background-position: center center;
       background-repeat: no-repeat;
       margin: 10px auto 20px auto; }
-  .confirmationMessage .sendURL .graphic {
+  .confirmation .confirmationMessage .sendURL .graphic {
     background-image: url("../images/sendURL_graphic.png"); }
-  .confirmationMessage .or-text {
+  .confirmation .confirmationMessage .or-text {
     text-transform: uppercase;
     font-size: 40px;
     color: #4a412f;
     font-family: 'Montserrat', sans-serif; }
-  .confirmationMessage .sendEmail .graphic {
+  .confirmation .confirmationMessage .sendEmail .graphic {
     background-image: url("../images/sendEmail_graphic.png"); }
-  .confirmationMessage .sendEmail .btn {
+  .confirmation .confirmationMessage .sendEmail .btn {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     color: white; }
-    .confirmationMessage .sendEmail .btn.btn-gmail {
+    .confirmation .confirmationMessage .sendEmail .btn.btn-gmail {
       background-color: #e94c4c; }
+.confirmation .meetup_details {
+  margin-top: 80px;
+  margin-bottom: 50px; }
+
+.meetup_finalized .calenderset {
+  /* background-image: url("../images/meetup_setup_complete.png");
+   background-repeat: no-repeat;
+   height: 300px;
+   width: 455px;
+   margin-left: auto;
+   margin-right: auto; */ }
+.meetup_finalized .meetup_location {
+  margin-bottom: 80px; }
+  .meetup_finalized .meetup_location .meetup_time {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 110px;
+    text-transform: uppercase;
+    line-height: .8; }
+  .meetup_finalized .meetup_location .meetup_date {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px; }
+  .meetup_finalized .meetup_location .meetup_name {
+    font-size: 29px;
+    color: #197cbc;
+    margin-top: 30px; }
+.meetup_finalized .emailnotice {
+  margin-bottom: 20px; }
 
 .invitee_location_suggestion #autoSuggestLocation {
   background-color: #76b96e;
@@ -5654,3 +5750,10 @@ body {
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0; } }
+/* HELPERS */
+.center {
+  margin: 0 auto !important; }
+
+.c1.c2 {
+  font-size: 20px;
+  font-weight: bold; }
