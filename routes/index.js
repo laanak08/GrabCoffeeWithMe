@@ -10,7 +10,7 @@ router.get('/meet', function(req, res) {
 });
 
 router.get('/picktimes', function(req, res) {
-  res.render('picking_times', { title: 'Express' });
+  res.render('picking_times', { title: 'Express', url :  '/picktimes'});
 });
 
 router.get('/picking_locations', function(req, res) {
