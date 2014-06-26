@@ -5656,21 +5656,27 @@ footer {
   margin-bottom: 50px; }
 
 .meetup_finalized .calenderset {
-  background-image: url("../images/meetup_setup_complete.png");
-  background-repeat: no-repeat;
-  height: 300px;
-  width: 455px;
-  margin-left: auto;
-  margin-right: auto; }
-.meetup_finalized .meetup_location .meetup_time {
-  font-family: 'digital-7mono', sans-serif;
-  font-size: 80px; }
-.meetup_finalized .meetup_location .meetup_date {
-  font-family: 'digital-7mono', sans-serif;
-  font-size: 25px; }
-.meetup_finalized .meetup_location .meetup_name {
-  font-size: 29px;
-  color: #197cbc; }
+  /* background-image: url("../images/meetup_setup_complete.png");
+   background-repeat: no-repeat;
+   height: 300px;
+   width: 455px;
+   margin-left: auto;
+   margin-right: auto; */ }
+.meetup_finalized .meetup_location {
+  margin-bottom: 80px; }
+  .meetup_finalized .meetup_location .meetup_time {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 110px;
+    text-transform: uppercase;
+    line-height: .8; }
+  .meetup_finalized .meetup_location .meetup_date {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px; }
+  .meetup_finalized .meetup_location .meetup_name {
+    font-size: 29px;
+    color: #197cbc;
+    margin-top: 30px; }
 
 .invitee_location_suggestion #autoSuggestLocation {
   background-color: #76b96e;

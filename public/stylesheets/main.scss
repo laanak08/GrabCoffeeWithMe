@@ -621,25 +621,30 @@ footer {
 }
 .meetup_finalized {
     .calenderset {
-        background-image: url("../images/meetup_setup_complete.png");
+       /* background-image: url("../images/meetup_setup_complete.png");
         background-repeat: no-repeat;
         height: 300px;
         width: 455px;
         margin-left: auto;
-        margin-right: auto;
+        margin-right: auto; */
     }
     .meetup_location {
+        margin-bottom: 80px;
         .meetup_time {
-            font-family: 'digital-7mono', sans-serif;
-            font-size: 80px;
+            font-family:'Open Sans Condensed', sans-serif;
+            font-weight: bold;
+            font-size: 110px;
+            text-transform: uppercase;
+            line-height: .8;
         }
         .meetup_date {
-            font-family: 'digital-7mono', sans-serif;
+            font-family: 'Open Sans', sans-serif;
             font-size: 25px;
         }
         .meetup_name {
             font-size: 29px;
             color: #197cbc;
+            margin-top: 30px;
         }
     }
 }
