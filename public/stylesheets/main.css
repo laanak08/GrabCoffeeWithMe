@@ -5263,10 +5263,14 @@ footer {
 a button {
   text-decoration: none; }
 
+a button:hover {
+  text-decoration: none; }
+
 .hero {
   padding: 50px;
   background-image: url("/images/peerio_hero_map.png");
-  background-position: center center; }
+  background-position: center center;
+  color: white; }
   .hero .peeriologo {
     margin-top: 30px;
     margin-bottom: 20px;
@@ -5526,8 +5530,7 @@ a button {
     border: 1px solid #5F3711; }
 
 .mapAndList {
-  margin-top: 10px;
-  height: 570px; }
+  margin-top: 10px; }
   .mapAndList #map_canvas {
     padding-top: 20px;
     height: 550px;
@@ -5544,17 +5547,17 @@ a button {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    margin-bottom: 20px; }
+    margin-bottom: 70px; }
   .mapAndList #listViewer {
     background-color: #fbfbfb;
     border-left: 1px solid #dddddd;
     height: 522px;
     overflow: scroll; }
     .mapAndList #listViewer .listItem:hover {
-      background-color: red; }
+      background-color: #f2f2f2;
+      cursor: pointer; }
     .mapAndList #listViewer .listItem {
-      border-bottom: 1px solid #dddddd;
-      padding: 20px 0px 20px 0px; }
+      padding: 20px 15px 20px 15px; }
       .mapAndList #listViewer .listItem .shopImg {
         float: left;
         padding-right: 20px; }
@@ -5577,6 +5580,8 @@ a button {
         /*green*/ }
       .mapAndList #listViewer .listItem .RemoveButton {
         background-color: red; }
+    .mapAndList #listViewer .divider {
+      border-top: 1px solid #ccc; }
     .mapAndList #listViewer .loadMore {
       cursor: pointer; }
       .mapAndList #listViewer .loadMore .moreText {

@@ -94,6 +94,7 @@ a button:hover {
     padding: 50px;
     background-image: url("/images/peerio_hero_map.png");
     background-position: center center;
+
     // color: white;
     .peeriologo {
         margin-top: 30px;
@@ -104,6 +105,7 @@ a button:hover {
     h2 {
         font-size: 36px;
         line-height: 1.3;
+        color: white;
         
     }
     .maintext {
@@ -463,7 +465,6 @@ a button:hover {
 }
 .mapAndList {
     margin-top: 10px;
-    height: 570px;
     #map_canvas {
         padding-top: 20px;
         height: 550px;
@@ -483,7 +484,7 @@ a button:hover {
         -webkit-border-radius: 3px;
         -moz-border-radius: 3px;
         border-radius: 3px;
-        margin-bottom: 20px;
+        margin-bottom: 70px;
     }
     #listViewer {
     background-color: #fbfbfb;
@@ -491,11 +492,11 @@ a button:hover {
     height: 522px;
     overflow: scroll;
         .listItem:hover {
-            background-color: red;
+            background-color: #f2f2f2;
+            cursor: pointer;
         }
         .listItem {
-            border-bottom: 1px solid #dddddd;
-            padding: 20px 0px 20px 0px;
+            padding: 20px 15px 20px 15px;
 
             .shopImg {
                 float: left;
@@ -524,6 +525,9 @@ a button:hover {
             .RemoveButton {
                 background-color: red;
             }
+        }
+        .divider {
+            border-top: 1px solid #ccc;
         }
         .loadMore {
             cursor: pointer;
