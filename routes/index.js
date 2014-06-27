@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 router.get('/', function(req, res) {
-  res.render('homepage', { title: 'Express' });
+  res.render('homepage', { title: 'Express', js: 'javascripts/test.js'});
 });
 
 router.get('/meet', function(req, res) {
