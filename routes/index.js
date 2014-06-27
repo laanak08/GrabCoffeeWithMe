@@ -1,5 +1,8 @@
 var express = require('express');
+var request = require('request');
 var router = express.Router();
+var localServer = "http://localhost:3000/"
+var prodServer = "http://peerioapi-20256.onmodulus.net/"
 
 router.get('/', function(req, res) {
   res.render('homepage', { title: 'Express', js: 'home.js'});
@@ -38,8 +41,26 @@ router.get('/marketplace', function(req, res) {
 });
 
 router.post('/meetup', function(req, res) {
-  console.log(req.body);
-  res.send(200,req.body);
+  // $.ajax({
+  //     url: localServer + "/meetup",
+  //     data: data,
+  //     type: 'POST',
+  //     success: function(){
+  //       res.send(200,req.body);
+  //     }
+  // });
+  data = req.body
+  console.log("data", data);
+  console.log(localServer + "meetup");
+  request.post({
+    url: localServer + "meetup",
+    body: data,
+    json: true
+  }, function(error, response, body) {
+    res.send(200, body);
+  });
+
+
 });
 
 
