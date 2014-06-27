@@ -13,6 +13,10 @@ router.get('/picktimes', function(req, res) {
   res.render('picking_times', { title: 'Express', url :  '/picktimes', js: 'picktimes.js'});
 });
 
+router.get('/finalize_time', function(req, res) {
+  res.render('finalize_time', { title: 'Express', url :  '/picktimes', js: 'finalize_time.js'});
+});
+
 router.get('/picking_locations', function(req, res) {
   res.render('picking_locations', { title: 'Express', js: 'picking_locations.js' });
 });
