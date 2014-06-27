@@ -5448,9 +5448,11 @@ a button:hover {
 .pickingTimes .SuggestAlternativeTimes {
   float: right; }
   .pickingTimes .SuggestAlternativeTimes .btn {
-    color: white; }
+    background-color: #dbdbdb;
+    color: #a6a6a6; }
   .pickingTimes .SuggestAlternativeTimes .btn:hover {
-    background-color: blue; }
+    background-color: #d1d1d1;
+    color: #9c9c9c; }
 
 .invitee_Welcome .GrabACoffeeWithMe_Artwork {
   background-image: url("../images/peerio_logo.png");

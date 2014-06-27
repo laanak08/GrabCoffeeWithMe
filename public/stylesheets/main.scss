@@ -350,11 +350,13 @@ a button:hover {
     .SuggestAlternativeTimes {
         float: right;
         .btn {
-            color: white;
+            background-color: #dbdbdb;
+            color: #a6a6a6;
 
         }
         .btn:hover {
-            background-color: blue;
+            background-color: #d1d1d1;
+            color: #9c9c9c;
         }
     }   
 }
