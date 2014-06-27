@@ -6,7 +6,7 @@ router.get('/', function(req, res) {
 });
 
 router.get('/meet', function(req, res) {
-  res.render('picking_occasion', { title: 'Express', , js: 'meet.js' });
+  res.render('picking_occasion', { title: 'Express', js: 'meet.js' });
 });
 
 router.get('/picktimes', function(req, res) {
