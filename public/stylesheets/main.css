@@ -1,3 +1,6 @@
+/* Blue */
+/* Green */
+/* Green */
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -878,7 +881,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans" "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
@@ -2649,19 +2652,19 @@ select[multiple].input-lg,
 
 .btn-success {
   color: white;
-  background-color: #5cb85c;
-  border-color: #4cae4c; }
+  background-color: #76b96e;
+  border-color: #66b15d; }
   .btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle {
     color: white;
-    background-color: #449d44;
-    border-color: #398439; }
+    background-color: #59a54f;
+    border-color: #4c8c44; }
   .btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle {
     background-image: none; }
   .btn-success.disabled, .btn-success.disabled:hover, .btn-success.disabled:focus, .btn-success.disabled:active, .btn-success.disabled.active, .btn-success[disabled], .btn-success[disabled]:hover, .btn-success[disabled]:focus, .btn-success[disabled]:active, .btn-success[disabled].active, fieldset[disabled] .btn-success, fieldset[disabled] .btn-success:hover, fieldset[disabled] .btn-success:focus, fieldset[disabled] .btn-success:active, fieldset[disabled] .btn-success.active {
-    background-color: #5cb85c;
-    border-color: #4cae4c; }
+    background-color: #76b96e;
+    border-color: #66b15d; }
   .btn-success .badge {
-    color: #5cb85c;
+    color: #76b96e;
     background-color: white; }
 
 .btn-info {
@@ -3812,9 +3815,9 @@ a.label:hover, a.label:focus {
     background-color: #3071a9; }
 
 .label-success {
-  background-color: #5cb85c; }
+  background-color: #76b96e; }
   .label-success[href]:hover, .label-success[href]:focus {
-    background-color: #449d44; }
+    background-color: #59a54f; }
 
 .label-info {
   background-color: #5bc0de; }
@@ -4030,7 +4033,7 @@ a.thumbnail.active {
   box-shadow: none; }
 
 .progress-bar-success {
-  background-color: #5cb85c; }
+  background-color: #76b96e; }
   .progress-striped .progress-bar-success {
     background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -5259,6 +5262,16 @@ footer {
 .container-narrow > hr {
   margin: 30px 0; }
 
+/* .btn customization */
+.btn .green {
+  background-color: #76b96e;
+  color: white; }
+.btn .green:hover {
+  background-color: #5ba352; }
+.btn .blue {
+  background-color: #428bca;
+  color: white; }
+
 /* Main marketing message and sign up button */
 a button {
   text-decoration: none; }
@@ -5316,6 +5329,24 @@ a button:hover {
     -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75); }
+
+.marketplace .usertype {
+  width: 300px;
+  padding-bottom: 30px; }
+.marketplace .role {
+  font-size: 28px;
+  font-weight: lighter;
+  color: white;
+  padding-bottom: 10px; }
+.marketplace label {
+  color: white; }
+
+.check_email .emailSent_graphic {
+  background-image: url("../images/email_sent.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 350px;
+  margin: 0px auto 0px auto; }
 
 .pageContainer {
   background-color: white;
@@ -5396,9 +5427,9 @@ a button:hover {
       border-radius: 30px;
       display: inline; }
     .pickingTimes .timesPickerContainer #geoLocationPicker .green {
-      background-color: green; }
+      background-color: #76b96e; }
     .pickingTimes .timesPickerContainer #geoLocationPicker .blue {
-      background-color: blue; }
+      background-color: #428bca; }
     .pickingTimes .timesPickerContainer #geoLocationPicker .orange {
       background-color: orange; }
     .pickingTimes .timesPickerContainer #geoLocationPicker .gray {
@@ -5420,6 +5451,8 @@ a button:hover {
       color: black; }
       .pickingTimes .timesPickerContainer .timeAvailable.selected .fa {
         color: white; }
+  .pickingTimes .timesPickerContainer .choosen {
+    background-color: #76b96e; }
   .pickingTimes .timesPickerContainer .available {
     background-color: #f7f4e7;
     color: black; }
@@ -5448,9 +5481,11 @@ a button:hover {
 .pickingTimes .SuggestAlternativeTimes {
   float: right; }
   .pickingTimes .SuggestAlternativeTimes .btn {
-    color: white; }
+    background-color: #dbdbdb;
+    color: #a6a6a6; }
   .pickingTimes .SuggestAlternativeTimes .btn:hover {
-    background-color: blue; }
+    background-color: #d1d1d1;
+    color: #9c9c9c; }
 
 .invitee_Welcome .GrabACoffeeWithMe_Artwork {
   background-image: url("../images/peerio_logo.png");
