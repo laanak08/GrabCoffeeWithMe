@@ -9,6 +9,10 @@ router.get('/meet', function(req, res) {
   res.render('picking_occasion', { title: 'Express', js: 'meet.js' });
 });
 
+router.get('/meetup', function(req, res) {
+  res.render('picking_occasion', { title: 'Express', js: 'meet.js' });
+});
+
 router.get('/picktimes', function(req, res) {
   res.render('picking_times', { title: 'Express', url :  '/picktimes', js: 'picktimes.js'});
 });
@@ -33,12 +37,12 @@ router.get('/finalize', function(req, res) {
   res.render('meetup_finalized', { title: 'Express', js: 'finalize.js' });
 });
 
-router.post('/signin', function(req, res) {
-  res.render('homepage', { title: 'Express', js: 'signin.js' });
-});
-
 router.get('/marketplace', function(req, res) {
   res.render('marketplace', { title: 'Express', js: 'marketplace.js' });
+});
+
+router.post('/signin', function(req, res) {
+  res.render('homepage', { title: 'Express', js: 'signin.js' });
 });
 
 router.post('/meetup', function(req, res) {
