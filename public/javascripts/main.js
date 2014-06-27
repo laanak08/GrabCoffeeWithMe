@@ -1,5 +1,4 @@
 $(function () {
-    console.log("ready");
     //picking times page
     $(".timeAvailable").click(function () {
         // TODO change available and taken buttons
