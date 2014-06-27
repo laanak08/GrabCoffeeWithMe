@@ -39,6 +39,7 @@ router.get('/marketplace', function(req, res) {
 
 router.post('/meetup', function(req, res) {
   console.log(req.body);
+  res.send(200,req.body);
 });
 
 
