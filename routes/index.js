@@ -41,6 +41,10 @@ router.get('/marketplace', function(req, res) {
   res.render('marketplace', { title: 'Express', js: 'marketplace.js' });
 });
 
+router.get('/check_email', function(req, res) {
+  res.render('check_email', { title: 'Express', js: 'check_email.js' });
+});
+
 router.post('/signin', function(req, res) {
   res.render('homepage', { title: 'Express', js: 'signin.js' });
 });
