@@ -5260,6 +5260,9 @@ footer {
   margin: 30px 0; }
 
 /* Main marketing message and sign up button */
+a button {
+  text-decoration: none; }
+
 .hero {
   padding: 50px;
   background-image: url("/images/peerio_hero_map.png");
@@ -5529,6 +5532,8 @@ footer {
     padding-top: 20px;
     height: 550px;
     background-color: blue; }
+  .mapAndList .AcceptGeoLocation {
+    padding-bottom: 30px; }
   .mapAndList .listViewerTitle {
     font-size: 18px;
     border-bottom: 1px solid #dddddd;
