@@ -1,5 +1,6 @@
 var express = require('express');
 var request = require('request');
+var qs = require('qs');
 var router = express.Router();
 var localServer = "http://localhost:3000/"
 var prodServer = "http://peerioapi-20256.onmodulus.net/"
@@ -21,7 +22,7 @@ router.get('/picktimes', function(req, res) {
 });
 
 router.get('/finalize_time', function(req, res) {
-  res.render('finalize_time', { title: 'Express', url :  '/picktimes', js: 'finalize_time.js'});
+  res.render('finalize_time', { title: 'Express', url :  '/finalize_time', js: 'finalize_time.js'});
 });
 
 router.get('/picking_locations', function(req, res) {
@@ -52,15 +53,30 @@ router.post('/signin', function(req, res) {
   res.render('homepage', { title: 'Express', js: 'signin.js' });
 });
 
+router.get('/meetup/:meetupId/:hashId', function(req, res) {
+  // get meetup id
+  console.log(req.params);
+  hashId = req.params.hashId;
+  meetupId = req.params.meetupId;
+  var data = {
+    hash: hashId
+  };
+  // check if available times from other user
+  request.get({
+    url: localServer + "meetup/" + meetupId + "/availableTimes?"+ qs.stringify(data),
+    body: data,
+    json: true
+  }, function(error, response, body) {
+    // console.log("body", body);
+    // if available times
+      // route to /finalize_time
+    // else
+      // route to /picktimes
+    res.redirect("/picktimes");
+  });
+});
+
 router.post('/meetup', function(req, res) {
-  // $.ajax({
-  //     url: localServer + "/meetup",
-  //     data: data,
-  //     type: 'POST',
-  //     success: function(){
-  //       res.send(200,req.body);
-  //     }
-  // });
   data = req.body
   console.log("data", data);
   console.log(localServer + "meetup");
