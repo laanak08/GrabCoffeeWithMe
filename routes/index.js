@@ -2,8 +2,8 @@ var express = require('express');
 var request = require('request');
 var qs = require('qs');
 var router = express.Router();
-var localServer = "http://localhost:3000/"
-var prodServer = "http://peerioapi-20256.onmodulus.net/"
+var localServer = "http://localhost:3000/";
+var prodServer = "http://peerioapi-20256.onmodulus.net/";
 
 router.get('/', function(req, res) {
   res.render('homepage', { title: 'Express', js: 'home.js'});
@@ -62,7 +62,7 @@ router.get('/meetup/:meetupId/:hashId', function(req, res) {
   //   hash: hashId
   // };
   // check if available times from other user
-  url = localServer + "meetup/" + meetupId + "/availableTimes/"+ hashId
+  url = localServer + "meetup/" + meetupId + "/availableTimes/"+ hashId;
   request.get({
     url: url,
     body: data,
@@ -77,7 +77,7 @@ router.get('/meetup/:meetupId/:hashId', function(req, res) {
 });
 
 router.post('/meetup', function(req, res) {
-  data = req.body
+  data = req.body;
   request.post({
     url: localServer + "meetup",
     body: data,
