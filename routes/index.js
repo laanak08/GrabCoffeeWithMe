@@ -55,22 +55,22 @@ router.post('/signin', function(req, res) {
 
 router.get('/meetup/:meetupId/:hashId', function(req, res) {
   // get meetup id
-  console.log(req.params);
+  // console.log(req.params);
   hashId = req.params.hashId;
   meetupId = req.params.meetupId;
-  var data = {
-    hash: hashId
-  };
+  // var data = {
+  //   hash: hashId
+  // };
   // check if available times from other user
+  url = localServer + "meetup/" + meetupId + "/availableTimes/"+ hashId
   request.get({
-    url: localServer + "meetup/" + meetupId + "/availableTimes?"+ qs.stringify(data),
+    url: url,
     body: data,
     json: true
   }, function(error, response, body) {
-    // console.log("body", body);
-    // if available times
+    //TODO if available times
       // route to /finalize_time
-    // else
+    //TODO else
       // route to /picktimes
     res.redirect("/picktimes");
   });
@@ -78,8 +78,6 @@ router.get('/meetup/:meetupId/:hashId', function(req, res) {
 
 router.post('/meetup', function(req, res) {
   data = req.body
-  console.log("data", data);
-  console.log(localServer + "meetup");
   request.post({
     url: localServer + "meetup",
     body: data,
