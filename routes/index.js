@@ -62,7 +62,7 @@ router.get('/meetup/:meetupId/:hashId', function(req, res) {
   //   hash: hashId
   // };
   // check if available times from other user
-  url = localServer + "meetup/" + meetupId + "/availableTimes/"+ hashId;
+  url = prodServer + "meetup/" + meetupId + "/availableTimes/"+ hashId;
   request.get({
     url: url,
     body: data,
@@ -79,7 +79,7 @@ router.get('/meetup/:meetupId/:hashId', function(req, res) {
 router.post('/meetup', function(req, res) {
   data = req.body;
   request.post({
-    url: localServer + "meetup",
+    url: prodServer + "meetup",
     body: data,
     json: true
   }, function(error, response, body) {
