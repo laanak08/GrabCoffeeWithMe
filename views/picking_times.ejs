@@ -1,7 +1,7 @@
 <% layout('base') -%>
 <div class="hero text-center bg-brand-primary">
   <div class="container">
-      <img src="images/peerio_hero_logo.png" class="img-responsive center peeriologo"></img>
+      <img src="/images/peerio_hero_logo.png" class="img-responsive center peeriologo"></img>
       <!--<h2 class="col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 clearfix">Developer tools that make it safe & easy for your users to schedule & meet locally.</h2>
       <p class="lead col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 clearfix">Build user scheduling, location mapping & payments into your peer-to-peer web & mobile apps in minutes.</p>
       <p class="col-xs-12">
@@ -62,113 +62,22 @@
             <thead>
               <tr>
                 <th></th>
-                <th>Today</th>
-                <th>Tomorrow</th>
-                <th>Wednesday</th>
-                <th>Thursday</th>
+                <th data-time="<%= titles[0]%>"><%= moment(titles[0]).format("dddd, MMMM Do YYYY")%></th>
+                <th data-time="<%= titles[1]%>"><%= moment(titles[1]).format("dddd, MMMM Do YYYY")%></th>
+                <th data-time="<%= titles[2]%>"><%= moment(titles[2]).format("dddd, MMMM Do YYYY")%></th>
+                <th data-time="<%= titles[3]%>"><%= moment(titles[3]).format("dddd, MMMM Do YYYY")%></th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td class="time">7 AM</td>
-                <td class="timeAvailable">Unavailable</td> <!-- Today -->
-                <td class="timeAvailable">Unavailable</td> <!-- Tomorrow -->
-                <td class="timeAvailable">Unavailable</td> <!-- Wednesday -->
-                <td class="timeAvailable">Unavailable</td> <!-- Thursday -->
-              </tr>
-              <tr>
-                <td class="time">8 AM</td>
-                <td class="timeAvailable">Unavailable</td> <!-- Today -->
-                <td class="timeAvailable">Unavailable</td> <!-- Tomorrow -->
-                <td class="timeAvailable">Unavailable</td> <!-- Wednesday -->
-                <td class="timeAvailable">Unavailable</td> <!-- Thursday -->
-              </tr>
-              <tr>
-                <td class="time">9 AM</td>
-                <td class="timeAvailable">Unavailable</td> <!-- Today -->
-                <td class="timeAvailable">Unavailable</td> <!-- Tomorrow -->
-                <td class="timeAvailable">Unavailable</td> <!-- Wednesday -->
-                <td class="timeAvailable">Unavailable</td> <!-- Thursday -->
-              </tr>
-              <tr>
-                <td class="time">10 AM</td>
-                <td class="timeAvailable">Unavailable</td> <!-- Today -->
-                <td class="timeAvailable">Unavailable</td> <!-- Tomorrow -->
-                <td class="timeAvailable">Unavailable</td> <!-- Wednesday -->
-                <td class="timeAvailable">Unavailable</td> <!-- Thursday -->
-              </tr>
-              <tr>
-                <td class="time">11 AM</td>
-                <td class="timeAvailable">Unavailable</td> <!-- Today -->
-                <td class="timeAvailable">Unavailable</td> <!-- Tomorrow -->
-                <td class="timeAvailable">Unavailable</td> <!-- Wednesday -->
-                <td class="timeAvailable">Unavailable</td> <!-- Thursday -->
-              </tr>
-              <tr>
-                <td class="time">12 PM</td>
-                <td class="timeAvailable">Unavailable</td> <!-- Today -->
-                <td class="timeAvailable">Unavailable</td> <!-- Tomorrow -->
-                <td class="timeAvailable">Unavailable</td> <!-- Wednesday -->
-                <td class="timeAvailable">Unavailable</td> <!-- Thursday -->
-              </tr>
-              <tr>
-                <td class="time">1 PM</td>
-                <td class="timeAvailable">Unavailable</td> <!-- Today -->
-                <td class="timeAvailable">Unavailable</td> <!-- Tomorrow -->
-                <td class="timeAvailable">Unavailable</td> <!-- Wednesday -->
-                <td class="timeAvailable">Unavailable</td> <!-- Thursday -->
-              </tr>
-              <tr>
-                <td class="time">2 PM</td>
-                <td class="timeAvailable">Unavailable</td> <!-- Today -->
-                <td class="timeAvailable">Unavailable</td> <!-- Tomorrow -->
-                <td class="timeAvailable">Unavailable</td> <!-- Wednesday -->
-                <td class="timeAvailable">Unavailable</td> <!-- Thursday -->
-              </tr>
-              <tr>
-                <td class="time">3 PM</td>
-                <td class="timeAvailable">Unavailable</td> <!-- Today -->
-                <td class="timeAvailable">Unavailable</td> <!-- Tomorrow -->
-                <td class="timeAvailable">Unavailable</td> <!-- Wednesday -->
-                <td class="timeAvailable">Unavailable</td> <!-- Thursday -->
-              </tr>
-              <tr>
-                <td class="time">4 PM</td>
-                <td class="timeAvailable">Unavailable</td> <!-- Today -->
-                <td class="timeAvailable">Unavailable</td> <!-- Tomorrow -->
-                <td class="timeAvailable">Unavailable</td> <!-- Wednesday -->
-                <td class="timeAvailable">Unavailable</td> <!-- Thursday -->
-              </tr>
-              <tr>
-                <td class="time">5 PM</td>
-                <td class="timeAvailable">Unavailable</td> <!-- Today -->
-                <td class="timeAvailable">Unavailable</td> <!-- Tomorrow -->
-                <td class="timeAvailable">Unavailable</td> <!-- Wednesday -->
-                <td class="timeAvailable">Unavailable</td> <!-- Thursday -->
-              </tr>
-              <tr>
-                <td class="time">6 PM</td>
-                <td class="timeAvailable">Unavailable</td> <!-- Today -->
-                <td class="timeAvailable">Unavailable</td> <!-- Tomorrow -->
-                <td class="timeAvailable">Unavailable</td> <!-- Wednesday -->
-                <td class="timeAvailable">Unavailable</td> <!-- Thursday -->
-              </tr>
-              <tr>
-                <td class="time">7 PM</td>
-                <td class="timeAvailable">Unavailable</td> <!-- Today -->
-                <td class="timeAvailable">Unavailable</td> <!-- Tomorrow -->
-                <td class="timeAvailable">Unavailable</td> <!-- Wednesday -->
-                <td class="timeAvailable">Unavailable</td> <!-- Thursday -->
-              </tr>
-              <tr>
-                <td class="time">8 PM</td>
-                <td class="timeAvailable">Unavailable</td> <!-- Today -->
-                <td class="timeAvailable">Unavailable</td> <!-- Tomorrow -->
-                <td class="timeAvailable">Unavailable</td> <!-- Wednesday -->
-                <td class="timeAvailable">Unavailable</td> <!-- Thursday -->
-              </tr>
-
-              
+              <% for(var i=0; i<times.length; i++) {%>
+                 <tr data-start="<%= times[i].start %>" data-end="<%= times[i].start + 1%>" >
+                   <td class="time"><%= times[i].start %></td>
+                   <td class="timeAvailable">Unavailable</td>
+                   <td class="timeAvailable">Unavailable</td>
+                   <td class="timeAvailable">Unavailable</td>
+                   <td class="timeAvailable">Unavailable</td>
+                 </tr>
+              <% } %>
 
             </tbody>
           </table>
@@ -178,7 +87,7 @@
       </div> <!-- END timesPickerContainer -->
 
       <div class="nextButtonSection text-center col-xs-12">
-        <a href="/confirmation" class="btn btn-lg next">Send Meet Up Request <i class="fa fa-arrow-right"></i></a>
+        <div class="btn btn-lg next pick-times">Send Meet Up Request <i class="fa fa-arrow-right"></i></div>
       </div>
 
       

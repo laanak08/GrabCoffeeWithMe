@@ -12,6 +12,7 @@
     "ejs": "*",
     "ejs-locals": "*",
     "express": "~4.2.0",
+    "moment": "^2.7.0",
     "morgan": "~1.0.0",
     "node-sass": "~0.9.3",
     "qs": "^0.6.6",

@@ -1,5 +1,6 @@
 var express = require('express');
 var request = require('request');
+var moment = require('moment');
 var qs = require('qs');
 var router = express.Router();
 var localServer = "http://localhost:3000/";
@@ -17,8 +18,32 @@ router.get('/meetup', function(req, res) {
   res.render('picking_occasion', { title: 'Express', js: 'meet.js' });
 });
 
-router.get('/picktimes', function(req, res) {
-  res.render('picking_times', { title: 'Express', url :  '/picktimes', js: 'picktimes.js'});
+router.get("/picktimes/:hashId/:meetupId", function(req, res) {
+  var nextFewDays = {}
+  nextFewDays.titles = [
+    moment(), 
+    moment().add("days", 1), 
+    moment().add("days", 2), 
+    moment().add("days", 3)
+  ];
+  nextFewDays.times = [
+    {start: 7, end: 8},
+    {start: 8, end: 9},
+    {start: 9, end: 10},
+    {start: 10, end: 11},
+    {start: 11, end: 12},
+    {start: 12, end: 13},
+    {start: 13, end: 14},
+    {start: 14, end: 15},
+    {start: 15, end: 16},
+    {start: 16, end: 17},
+    {start: 17, end: 18},
+    {start: 18, end: 19},
+    {start: 19, end: 20},
+    {start: 20, end: 21}
+  ];
+
+  res.render('picking_times', { title: 'Express', js: 'picktimes.js', titles:  nextFewDays.titles, times:  nextFewDays.times, moment: moment });
 });
 
 router.get('/finalize_time', function(req, res) {
@@ -54,32 +79,27 @@ router.post('/signin', function(req, res) {
 });
 
 router.get('/meetup/:meetupId/:hashId', function(req, res) {
-  // get meetup id
-  // console.log(req.params);
   hashId = req.params.hashId;
   meetupId = req.params.meetupId;
-  // var data = {
-  //   hash: hashId
-  // };
   // check if available times from other user
-  url = prodServer + "meetup/" + meetupId + "/availableTimes/"+ hashId;
+  url = localServer + "meetup/" + meetupId + "/availableTimes/"+ hashId;
   request.get({
     url: url,
-    body: data,
     json: true
   }, function(error, response, body) {
     //TODO if available times
       // route to /finalize_time
     //TODO else
       // route to /picktimes
-    res.redirect("/picktimes");
+    console.log("/picktimes/" + meetupId + "/" + hashId);
+    res.redirect("/picktimes/" + meetupId + "/" + hashId);
   });
 });
 
 router.post('/meetup', function(req, res) {
   data = req.body;
   request.post({
-    url: prodServer + "meetup",
+    url: localServer + "meetup",
     body: data,
     json: true
   }, function(error, response, body) {

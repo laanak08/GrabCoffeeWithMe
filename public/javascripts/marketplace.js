@@ -9,13 +9,11 @@ $(function () {
             inviterfirst : $("#buyername").val(),
             inviteefirst : $("#sellername").val()
         };
-        console.log("about to send meetup");
         $.ajax({
             url: "/meetup",
             data: data,
             type: 'POST',
             success: function(){
-                console.log("redirecting");
                 window.location = "/check_email";
             }
         });
