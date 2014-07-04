@@ -513,6 +513,14 @@ a button:hover {
     }
 
 }
+
+.location {
+    cursor: pointer;
+    &.selected {
+        background-color: yellow;
+    }
+}
+
 .mapAndList {
     margin-top: 10px;
     #map_canvas {

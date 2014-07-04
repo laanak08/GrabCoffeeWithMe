@@ -34,6 +34,8 @@
           </div>
         </div>
 
+
+
         <div class="occasionTypePicker col-xs-12">
           <button type="button" class="occasion btn btn-lg firstDate col-xs-12 col-md-4">The <br />First Date </button>
           <button type="button" class="occasion btn btn-lg businessMeeting col-xs-12 col-md-4">Getting Down <br />to Business</button>
@@ -41,8 +43,12 @@
         </div> -->
         <div class="AcceptGeoLocation col-xs-12 col-md-12 col-lg-6 col-lg-offset-3">
           <div class="input-group">
-            <input type="text" class="form-control" placeholder="Your Location">
-            <span class="input-group-addon" >Current Location  <i class="fa fa-location-arrow"></i></span>
+            <!-- <input type="text" class="form-control" placeholder="Your Location">
+            <span class="input-group-addon" >Current Location  <i class="fa fa-location-arrow"></i></span> -->
+
+
+
+
           </div>
           <p style="font-size: 11px; color: #ccc; padding-top: 5px;">Your browser may ask you to allow it to use your geographic location</p>
 
@@ -52,84 +58,30 @@
           <div id="listViewer">
             <div class="listViewerTitle">Please choose 1 place</div>
             
-            
-            <div class="listItem">
-              <div class="btn btn-lg AddButton"><i class="fa fa-check"></i></div>
-              <div class="shopImg"><img src="images/coffee-emporium.jpg"></div>
-              <div class="shopName">Coffee Emporium</div>
-              <div class="shopAddress1stLine">110 E Central Pkwy</div>
-              <div class="shopAddress2ndLine">Cincinnati, OH 45202</div>
-              <div class="shopPhoneNumber">(513) 651-5483</div>
+            <ul>
+              <% for(var i=0; i < locations.length; i++) {%>
+                 <li class="location" id="<%= locations[i].id %>">
+                  <%= locations[i].name %>
+                 </li>
+                 <!-- 
+                 For other attributes, see http://goo.gl/SNqo6 "Sample Response (for term=yelp, location=sf, limit=1):" at
+                 http://www.yelp.com/developers/documentation/v2/search_api 
+                 -->
+                 <div class="divider"></div>
+              <% } %>
+            </ul>
 
-            </div> <!-- listItem -->
-            <div class="divider"></div>
-
-            <div class="listItem">
-              <div class="btn btn-lg RemoveButton"><i class="fa fa-plus"></i></div>
-              <div class="shopImg"><img src="images/coffee-emporium.jpg"></div>
-              <div class="shopName">Coffee Emporium</div>
-              <div class="shopAddress1stLine">110 E Central Pkwy</div>
-              <div class="shopAddress2ndLine">Cincinnati, OH 45202</div>
-              <div class="shopPhoneNumber">(513) 651-5483</div>
-
-            </div> <!-- listItem -->
-            <div class="divider"></div>
-
-            <div class="listItem">
-              <div class="btn btn-lg AddButton"><i class="fa fa-check"></i></div>
-              <div class="shopImg"><img src="images/coffee-emporium.jpg"></div>
-              <div class="shopName">Coffee Emporium</div>
-              <div class="shopAddress1stLine">110 E Central Pkwy</div>
-              <div class="shopAddress2ndLine">Cincinnati, OH 45202</div>
-              <div class="shopPhoneNumber">(513) 651-5483</div>
-
-            </div> <!-- listItem -->
-            <div class="divider"></div>
-
-            <div class="listItem">
-              <div class="btn btn-lg AddButton"><i class="fa fa-check"></i></div>
-              <div class="shopImg"><img src="images/coffee-emporium.jpg"></div>
-              <div class="shopName">Coffee Emporium</div>
-              <div class="shopAddress1stLine">110 E Central Pkwy</div>
-              <div class="shopAddress2ndLine">Cincinnati, OH 45202</div>
-              <div class="shopPhoneNumber">(513) 651-5483</div>
-
-            </div> <!-- listItem -->
-            <div class="divider"></div>
-
-            <div class="listItem">
-              <div class="btn btn-lg RemoveButton"><i class="fa fa-plus"></i></div>
-              <div class="shopImg"><img src="images/coffee-emporium.jpg"></div>
-              <div class="shopName">Coffee Emporium</div>
-              <div class="shopAddress1stLine">110 E Central Pkwy</div>
-              <div class="shopAddress2ndLine">Cincinnati, OH 45202</div>
-              <div class="shopPhoneNumber">(513) 651-5483</div>
-
-            </div> <!-- listItem -->
-            <div class="divider"></div>
-
-            <div class="listItem">
-              <div class="btn btn-lg AddButton"><i class="fa fa-check"></i></div>
-              <div class="shopImg"><img src="images/coffee-emporium.jpg"></div>
-              <div class="shopName">Coffee Emporium</div>
-              <div class="shopAddress1stLine">110 E Central Pkwy</div>
-              <div class="shopAddress2ndLine">Cincinnati, OH 45202</div>
-              <div class="shopPhoneNumber">(513) 651-5483</div>
-
-            </div> <!-- listItem -->
-            <div class="divider"></div>
-
-            <div class="loadMore text-center">
+            <!-- <div class="loadMore text-center">
               <p class="moreText"> More</p>
               <div class="MoreArrow text-center"></div>
 
-            </div><!-- END loadMore -->
-            <div class="divider"></div>
+            </div> -->
+            <!-- END loadMore -->
 
 
           </div><!-- END listViewr -->
-          <div class="nextButtonSection text-center col-xs-12">
-            <a href="/finalize" class="btn btn-lg next">Send Location to Buyer <i class="fa fa-envelope-o"></i></a>
+          <div class="nextButtonSection text-center col-xs-12" id="finalize">
+            <a href="/finalize/<%=meetupId%>" class="btn btn-lg next">Finalize Meetup <i class="fa fa-envelope-o"></i></a>
           </div>
         </div> <!-- END listViewerPadding -->
       </div><!-- mapAndList -->

@@ -11,8 +11,6 @@ $(function () {
 	var selectedTimes = [];
 
 	$(".pick-times").click(function () {
-		meetupId = "12345";
-		userId = "90324";
 		selectedTimes = [];
 		$( ".selected").each(function(index) {
 		  var timeframe = {};
@@ -21,23 +19,30 @@ $(function () {
 		  var start =  $(this).parent().first().data("start");
 		  var end =  $(this).parent().first().data("end");
 		  date = moment(date);
+		  // console.log("a");
 		  var startDate = moment(new Date(date.year(), date.month(), date.day(), start, 0, 0)); 
 		  var endDate = moment(new Date(date.year(), date.month(), date.day(), end, 0, 0)); 
-		  timeframe.start = startDate;
-		  timeframe.end = endDate;
-		  selectedTimes.push(data);
+		  // console.log("b");
+		  timeframe.start = startDate.toString();
+		  timeframe.end = endDate.toString();
+		  selectedTimes.push(timeframe);
 		});
 
 		var data = {
 			openTimeframes: selectedTimes
 		};
-
+		pathArray = window.location.pathname.split( '/' );
+		// console.log("about to post");
+		// console.log(data);
+		var url = "/picktimes/"+ pathArray[3] + "/" + pathArray[2];
+		// console.log(url);
 		$.ajax({
-            url: "/meetup/"+ meetupId + "/addtimeframes/" + userId,
+            // url: "/meetup/"+ pathArray[2] + "/addtimeframes/" + pathArray[3],
+            url: url,
             data: data,
-            type: 'PUT',
+            type: 'POST',
             success: function(){
-                window.location = "/check_email";
+                window.location = "/confirmation";
             }
         });
 	});
